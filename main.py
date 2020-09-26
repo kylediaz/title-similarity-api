@@ -97,7 +97,7 @@ def get_connected_sub_graphs(graph: dict) -> list:
 import os
 import requests
 
-dandelion_template = "https://api.dandelion.eu/datatxt/sim/v1/?text1=%s&text2=%s&token=" + os.environ.get("dandelion_token")
+dandelion_template = "https://api.dandelion.eu/datatxt/sim/v1/?text1=%s&text2=%s&token=" # + os.environ.get("dandelion_token")
 
 def similarity(s1: str, s2: str) -> float:
     s1_embed_tensor = get_embed(s1)
